@@ -3,37 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather Forecast</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>London</h1>
-        <p>
-          Friday 13:00, sunny
-          <br />
-          Humidity: 66%, Wind: 2.17km/h
-        </p>
-      </div>
-      <div>🌤️ 19 C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/xshandy" target="_blank">Shandy Shek</a> and
-      is on
-      <a href="https://github.com/xshandy/Weatherforecast" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://weatherapp-homework.netlify.app/" target="_blank">
-        Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="current-city" id="current-city">London</h1>
+            <p class="current-details">
+              <span id="current-date">Friday 13:00</span>, sunny
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>2.17km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌤️</span>
+            <span class="current-temperature-value">19</span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/xshandy" target="_blank">Shandy Shek</a> and
+        is on
+        <a href="https://github.com/xshandy/Weatherforecast" target="_blank"
+          >Github
+        </a>
+        and hosted on
+        <a href="https://weatherapp-homework.netlify.app/" target="_blank">
+          Netlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
