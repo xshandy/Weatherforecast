@@ -37,6 +37,10 @@ header {
   color: white;
 }
 
+.current-temperature {
+  display: flex;
+}
+
 .search-form-button {
   background-color: rgb(147, 185, 195);
   padding: 15px 30px;
@@ -85,7 +89,7 @@ main {
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -38px;
+  top: -20px;
 }
 
 footer {

@@ -30,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="current-city" id="current-city">London</h1>
+            <h1 class="city" id="inputCity"></h1>
             <p class="current-details">
               <span id="current-date">Friday 13:00</span>, sunny
               <br />
@@ -38,9 +38,12 @@
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">🌤️</span>
-            <span class="current-temperature-value">19</span>
-            <span class="current-temperature-unit">°C</span>
+            <div class="current-temperature-icon">🌤️</div>
+            <div
+              class="current-temperature-value"
+              id="current-temperature-value"
+            ></div>
+            <div class="current-temperature-unit">°C</div>
           </div>
         </div>
       </main>
@@ -57,6 +60,6 @@
         </a>
       </footer>
     </div>
-    <script src="src/app.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
