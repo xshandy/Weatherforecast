@@ -20,7 +20,7 @@ a {
 
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
+  padding: 0 0 35px 0;
 }
 
 .search-form-input {
@@ -89,7 +89,7 @@ main {
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -20px;
+  top: -38px;
 }
 
 footer {
