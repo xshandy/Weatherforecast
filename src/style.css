@@ -20,7 +20,7 @@ a {
 
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 35px 0;
+  padding: 0 0 30px 0;
 }
 
 .search-form-input {
@@ -76,20 +76,21 @@ main {
 
 .current-temperature-icon {
   position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .current-temperature-value {
   font-size: 70px;
   font-weight: bold;
+  line-height: 88px;
 }
 
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -38px;
+  top: -10px;
+  margin-top: 6px;
 }
 
 footer {
