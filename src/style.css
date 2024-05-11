@@ -71,7 +71,7 @@ main {
 }
 
 .current-details strong {
-  color: rgba(18, 42, 219, 0.869);
+  color: rgb(9, 120, 175);
 }
 
 .current-temperature-icon {
@@ -96,7 +96,7 @@ main {
 .weather-forecast {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .weather-forecast-item {
   margin: 0 30px;
@@ -105,8 +105,7 @@ main {
 .weather-forecast-date {
   text-align: center;
   font-size: 16px;
-  opacity: 0.5;
-  color: rgb(46, 91, 136);
+  color: rgb(9, 120, 175);
 }
 
 .weather-forecast-temperatures {
