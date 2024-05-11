@@ -48,6 +48,14 @@ header {
   border-radius: 6px;
   color: white;
   font-size: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-form-button:hover {
+  background-color: white;
+  color: rgb(147, 185, 195);
+  border: solid;
+  cursor: pointer;
 }
 
 main {
