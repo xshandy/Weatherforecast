@@ -9,8 +9,6 @@ function displayWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
-  console.log(response.data);
-
   cityElement.innerHTML = response.data.city;
   timeELement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -59,5 +57,40 @@ function showSearch(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+ <div class="weather-forecast">
+   <div class="weather-forecast-item">
+     
+       <div class="weather-forecast-date">${day}</div>
+
+       <img
+         src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_3-128.png"
+         alt=""
+         width="42"
+       />
+       <br />
+       <div class="weather-forecast-temperatures">
+         <span class="weather-forecast-temperature-max">12°</span>
+         <span class="weather-forecast-temperature-min">10°</span>
+       </div>
+     </div>
+   
+ </div>
+ `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", showSearch);
+
+searchCity("Hong Kong");
+displayForecast();

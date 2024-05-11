@@ -89,8 +89,32 @@ main {
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -10px;
-  margin-top: 6px;
+  top: -20px;
+  margin-top: 10px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-item {
+  margin: 0 40px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+  color: rgb(46, 91, 136);
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
 footer {
